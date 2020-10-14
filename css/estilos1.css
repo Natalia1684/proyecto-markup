@@ -1,0 +1,130 @@
+/*html{
+    font-family: 'Bitter', serif;
+font-family: 'Lobster', cursive;
+font-family: 'Syne', sans-serif;
+}*/
+/*body{
+    background-color:papayawhip;
+    font-size: 20px;
+}*/
+.logo {
+  float: left;
+  width: 75px;
+  height: auto;
+}
+#ImagenIndex{
+    width: 400px;
+    height: 300px;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+}
+#ImagenMujer2{
+    width: 350px;
+    height: 300px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    transition:all is ease;
+}
+#ImagenMujer2{
+    width:400px;
+    height:400px;
+    margin-left:auto;
+    margin-right:auto;
+    animation-name:mujeranimada;
+    animation-iteration-count:initial;
+    animation-timing-function:ease-in-out;
+    animation-duration: 3s;
+}
+@keyframes imagenanimada{
+    0%{width:400px;}
+    25%{height:300px;}
+    50%{transform:scale(1);}
+    100%{transform:scale(1.5);}
+}
+@keyframes mujeranimada{
+    0%{width:400px;}
+    25%{height:300px;}
+    50%{transform:scale(1);}
+    100%{transform:scale(1.5);}
+}
+/*.redes{
+        float: right;
+        height: 37px;
+        padding-right: 30%;
+}
+/*.navbar{
+    color:black;
+    position:absolute;
+    background: linear-gradient(to right, rgba(185,170,184,1) 0%, rgba(140,147,177,1) 43%, rgba(185,170,184,1) 74%, rgba(216,208,239,1) 100%);
+    left: 20%;   
+}*/
+/*.Titulo{
+    font-size: 25px;
+    color:black;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 10px;
+    background-image: linear-gradient(to right, #3494E6, #b91d73);
+}
+#TituloNosotros{
+    background: radial-gradient(circle at top left, #fdbb2d, #22c1c3);  
+}*/
+.espacioPalabras{
+    word-spacing: 30px;
+}
+/*.grid{
+    display:grid;
+    height: 300px;
+    border:solid 5px black;
+    background-color: lightslategrey;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items:center; 
+    gap:1em;
+    padding:1em;  
+}*/
+.item{
+    border: solid 1px yellow;
+    height: 50px;
+    width: 200px;
+    padding:1em;
+    background-color:lightpink;
+    align-self: start;
+    transition:height 1s;
+}
+
+/*footer{
+    width:100%;
+    margin-top: 50px;   
+}
+/*.sociales{
+    background-color: lightslategrey;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    padding:5px 10px;
+    flex-wrap:wrap;
+}
+.redes:hover{
+  transform: scale(1.1, 1.1);
+}
+*/.carousel {
+     width:500px;
+     height:500px;
+     margin-left:30%;
+}/*
+
+//*@media(min-width:375px) and (max-width:414px)
+{
+    body{
+        background-color: green;
+    }
+    footer{
+        background-color: rgba(140,147,177,1);
+        width: 1500px;
+}
+}
