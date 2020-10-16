@@ -2,18 +2,23 @@
     color:black;
     position:absolute;
     background: linear-gradient(to right, rgba(185,170,184,1) 0%, rgba(140,147,177,1) 43%, rgba(185,170,184,1) 74%, rgba(216,208,239,1) 100%);
-    left: 25%;
+    left: 20%;
+    padding:10px;
 }
 #ImagenIndex{
-    width: 350px;
-    height: 250px;
+    width: 400px;
+    height: 400px;
     display: inline;
     float:left; 
+    margin:20px;
 }
 #MasajesIndex{
-    width: 350px;
-    height: 250px;
+    width: 400px;
+    height: 400px;
     display:inline;
     float:right;
+    margin-right:20px;
     
     }
+    
+    

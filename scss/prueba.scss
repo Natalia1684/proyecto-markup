@@ -4,7 +4,7 @@
     color:black;
     font-weight:$fw;
     text-align: center;
-    letter-spacing:5px;
+    letter-spacing:10px;
     background-image: linear-gradient(to right, #F7D6EC, #b91d73);
 }
 @import "header";
@@ -13,7 +13,7 @@
 $color-uno:white;
 p{
     @if($color-uno==white){
-        font-size:20px;
+        font-size:15px;
     }
     @else if($color-uno= red){
         font-size:15px;
@@ -22,29 +22,46 @@ p{
         font-size:12px;
     }
 }
+.Titulo{
+    font-size: 35px;
+    color:black;
+    font-weight: bold;
+    padding-top: 20%;
+    text-align: center;
+    letter-spacing: 10px;
+    background-image: linear-gradient(to right, #3494E6, #b91d73);
+    padding: 20px;
+    margin-top: center;
+   
+}
 body{
     font-family:'Podkova', serif; 
      @include titulos(18px,bold);
+     position: relative;
+     min-height: 100vh;
+     margin: 0 auto;
+     max-width: 100%;
+
+    
+     
     
 }
+
 #TituloNosotros{
-    background: radial-gradient(circle at top left, #fdbb2d, #776e72);
+    background: radial-gradient(circle at top left, #fdbb2d, #22c1c3);
     @include titulos(20px,200);
 }
-    p{
-        background-color: $color-uno;
-
-      }
+   
     .sociales{
     background-color: lightslategrey;
     display:flex;
     flex-direction:row;
     justify-content: space-between;
-    padding:5px 5px;
+    padding:auto;
     flex-wrap:wrap;
     }
     .sociales__redes{
-        float: right;
+      
         width: 50px;
         height: 50px;
     }
@@ -54,19 +71,57 @@ body{
     .texto__parrafo{
         font-size:(fsize);
     }
+.TextoIndex{
+    text-transform: uppercase;
+    margin-top: 10%;
+    background-color: none;
+    font-size: 20px;
+    text-decoration-style: dotted;
+    letter-spacing: 5px;
+    padding: auto;
+    
+ 
+}
+/*.tratamientos__subtitulo{
+    width: auto;
+    height: auto;
+    text-align:left ;
+    text-decoration: none;
+
+}*/
+.index__container{
+    width: 800px;
+    height: 600px;
+
+}
+/*h2{
+    margin-top: 40%;
+    float: left;
+}*/
+.facial{
+    width: 400px;
+    height: 600px;
+    margin-top: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
 .corporal{
     width:400px;
     height:400px;
     float:center;
 }
-.tabla{
-    float:20%;
-}
+/*.tabla{
+    margin-top: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    
+}*/
  
 .grid{
     display:grid;
     height: 400px;
-    border:solid 5px black;
+    border:solid 5px blueviolet;
     background-color: lightslategrey;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
