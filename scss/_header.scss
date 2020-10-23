@@ -1,24 +1,16 @@
 .navbar {
-    color:black;
-    position:absolute;
-    background: linear-gradient(to right, rgba(185,170,184,1) 0%, rgba(140,147,177,1) 43%, rgba(185,170,184,1) 74%, rgba(216,208,239,1) 100%);
-    left: 20%;
-    padding:10px;
+    position: fixed;
+    width: 100%;
+    background-color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    max-width: 100%;
+    font-size:18px;
+    letter-spacing:15px;
+    font-weight: bold;
+
 }
-#ImagenIndex{
-    width: 400px;
-    height: 400px;
-    display: inline;
-    float:left; 
-    margin:20px;
-}
-#MasajesIndex{
-    width: 400px;
-    height: 400px;
-    display:inline;
-    float:right;
-    margin-right:20px;
-    
-    }
+
     
     

@@ -8,80 +8,286 @@
     background-image: linear-gradient(to right, #F7D6EC, #b91d73);
 }
 @import "header";
-@import url("https://fonts.googleapis.com/css2? family = Podkova & display = swap");
-/*variables*/
-$color-uno:white;
-p{
-    @if($color-uno==white){
-        font-size:15px;
-    }
-    @else if($color-uno= red){
-        font-size:15px;
-    }
-    @else{
-        font-size:12px;
-    }
+.logo{
+    height: 100px;
 }
+.container-body{
+    position: relative;
+    min-height: 100vh;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+
+
 .Titulo{
-    font-size: 40px;
+    font-size: 30px;
     color:black;
     font-weight: bold;
     padding-top: 10%;
     text-align: center;
     letter-spacing: 10px;
-    background-image: linear-gradient(to right, #3494E6, #b91d73);
-    padding: 20px;
-    margin-top: center;
-   
+    background-image: linear-gradient(to right, #3494E6, #b91d73); 
 }
-body{
-    font-family:'Podkova', serif; 
-     @include titulos(18px,bold);
-     position: relative;
-     min-height: 100vh;
-     margin: 0 auto;
-     max-width: 100%;
-
+.texto{
+    font-size: 30px;
+    padding-top: 2%;
+    margin: 0 auto;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
-     
     
 }
-
+.texto1{
+    font-size: 30px;
+    padding-top:3%;
+    margin: 0 auto;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       
+}
+h2{
+    text-decoration: underline wavy black;
+}
+h3{
+    text-decoration: underline wavy black;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+    margin-top: 5%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 0;
+}
 #TituloNosotros{
     background: radial-gradient(circle at top left, #fdbb2d, #22c1c3);
     @include titulos(20px,200);
+} 
+.container-imag{
+    display: block;
+    justify-content: space-around;
+    margin: center;
+    margin-top:5%;
+    padding: 0 auto;
+   }
+.ImagenIndex{
+    float:left;
+    margin-top:5%;
+    margin:center;
+    margin-left:5%;
+    padding:3px;
 }
-   
-    .sociales{
-    background-color: lightslategrey;
-    display:flex;
-    flex-direction:row;
-    justify-content: space-between;
-    padding:auto;
-    flex-wrap:wrap;
-    }
-    .sociales__redes{
-      
-        width: 50px;
-        height: 50px;
-    }
-    .redes:hover{
-    transform: scale(1.1, 1.1);
-    }
-    .texto__parrafo{
-        font-size:(fsize);
-    }
-.TextoIndex{
-    text-transform: uppercase;
+.contenido{
+    text-transform:uppercase;
+    font-size: 25px;
+    color: grey;
+    margin-left: 6%;
     margin-top: 10%;
-    background-color: none;
-    font-size: 20px;
-    text-decoration-style: dotted;
-    letter-spacing: 5px;
-    padding: auto;
     
- 
+   
 }
+.intro{
+    font-size: 25px;
+    margin-left: 6%;
+}
+.Descuentos{
+     margin-top: 5%;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 10px;
+    background-image: linear-gradient(to right, #DF505D, #8C50DF ); 
+    text-transform: uppercase;
+    border:solid 1px; 
+    
+   }  
+.info{
+    margin-top:2%;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5%;
+}
+
+
+
+
+   
+    
+
+.ImagenIndex{
+    height:400px;
+    width: 600px;
+    float:right;
+    margin-top:10%;
+    margin:auto;
+    margin-right:5%;
+    padding:5px;
+
+    
+}
+
+.texto-corporales{
+    position: left;
+    text-align:left;
+    margin-top:auto;
+    font-size: 20px;
+    font-weight: bold;
+}
+.img-promociones{
+    display:inline;
+    justify-content: center; 
+    margin: 0 auto;
+    padding: 0, auto;
+    height:400px;
+    width: 600px;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+   
+}
+.promo-img{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin: auto;
+    padding:2%;
+    justify-content: right;
+    line-height: 0px;
+}
+
+//estilos Sección Depilación/
+.depi{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: center;
+}
+.depdef{
+    width: 900px;
+    height:700px;
+    padding-top: 2%;
+    border-radius: 80px;  
+}
+.titulodepi{
+    text-transform: uppercase;
+    color:#242D2D;
+    font-weight: bolder;
+    margin-top: 3%;
+    margin-left:30%;
+    margin-bottom:3%;
+    animation-name: depi;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 0s;
+}
+@keyframes depi{
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+.titulodepi1{
+    color:#242D2D;
+    font-size: 25px;
+    letter-spacing: 5px;
+    margin-left: 30%;
+    margin-bottom: 2%;
+    text-decoration: none;  
+}
+.maquinas{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 100%;
+    margin-left:6%;
+    margin-top:5%;
+}
+.maquina{
+    width:500px;
+    height:600px;
+    float: left;
+    border-radius:100px;
+    border:10px solid #666;
+    white-space: 2px;
+  }
+ .description{
+     display:flex;
+     flex-direction:column;
+     padding-top: 20px;
+ }
+ .content{
+    font-size: 20px;
+    padding-top:3%;
+    margin: 0 auto;
+    margin-left: 3%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    font-weight:200px;
+    text-align:left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+ }
+
+//estilos Sección Tratamientos/
+.d-block {
+    width:auto;
+    height:1000px;
+    margin:0 auto;
+    margin-top: 8%; 
+}
+.face-content{
+    margin-top:5%;
+    
+}
+.face{
+    font-size: 40px;
+    font-weight: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    margin-left: 30%;
+    text-decoration: none;
+}
+.descripcion{
+    font-size: 25px;
+    font-style: bold;
+    margin-left: 2%;
+}
+.img-corporal{
+    display: flex;
+    max-width: 100%;
+    flex-direction: row;
+    min-height: 100vh;     
+}
+.drenaje-img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+}
+@supports(object-fit: cover){
+    .drenaje-im{
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+}
+          
+          
+          
+  
+  
+
+
+
+.facial{
+    width: 400px;
+    height: 600px;
+    margin:10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5%;
+    display: flex;
+    margin-top:5%
+}
+
 /*.tratamientos__subtitulo{
     width: auto;
     height: auto;
@@ -94,30 +300,22 @@ body{
     height: 600px;
 
 }
-/*h2{
-    margin-top: 40%;
-    float: left;
-}*/
-.facial{
-    width: 400px;
-    height: 600px;
-    margin-top: 10%;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
 .corporal{
     width:400px;
     height:400px;
     float:center;
 }
-/*.tabla{
-    margin-top: 20%;
-    font-family: Arial, Helvetica, sans-serif;
-    list-style-type: none;
-    
-}*/
- 
+
+
+#map{
+    width: 800px;
+    height: 600px;
+    margin:0 auto;
+    display:flex;
+    margin-left: 10%;
+    margin-bottom: 2px;
+}
+//Estilos Nosotros
 .grid{
     display:grid;
     height: 400px;
@@ -130,12 +328,76 @@ body{
     align-items:center; 
     gap:1em;
     padding:1em;
+    margin-bottom: 5%;
+    font-weight: bolder;
 }
 .grid div:hover{
     border:1px yellow;
     height: 150px;
 }
-//media query
+//Estilos footer
+
+ footer {
+    display: flex;
+    background-color: #D8BCEE;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    right: 0;
+    left: 0;
+    margin-bottom: 0;
+   
+
+}
+.logofooter{
+    height: 95px;
+    padding-top: 5%;
+    text-transform: none;
+    margin-left: 2%;
+}
+.place-footer{
+    color: black;
+    text-align: center;
+    margin: 0px;
+    
+} 
+h5{
+    color: black;
+    margin: 0;
+    font-size: 20px;
+    text-decoration: none;
+}
+footer a{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+.redes{
+    padding-top: 5%;
+    width: 40px;
+    height: 50px;
+    line-height: 2%;
+    
+}
+.navfoot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+.textofoot{
+    letter-spacing:10px; 
+    word-spacing: 5pt;
+}
+.formulario{
+    margin-left: 30%;
+}
+
+//media query- Mobile
 @media(min-width:375px) and (max-width:414px)
 {
     body{
@@ -145,4 +407,20 @@ body{
         background-color: rgba(140,147,177,1);
         width: 150px;
     }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    body {
+      background-color: #F5CF8E;
+    }
+    footer{
+        background-color:#E84C4C;
+        width: 150px;
+
+    }
+    .grid {
+		grid-template-columns: repeat(4, 1fr);
+
+  }
 }

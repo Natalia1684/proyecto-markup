@@ -12,31 +12,7 @@ font-family: 'Syne', sans-serif;
   width: 75px;
   height: auto;
 }
-/*#ImagenIndex{
-    width: 400px;
-    height: 300px;
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-}
-#ImagenMujer2{
-    width: 350px;
-    height: 300px;
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-    transition:all is ease;
-}
-#ImagenMujer2{
-    width:400px;
-    height:400px;
-    margin-left:auto;
-    margin-right:auto;
-    animation-name:mujeranimada;
-    animation-iteration-count:initial;
-    animation-timing-function:ease-in-out;
-    animation-duration: 3s;
-}
+
 @keyframes imagenanimada{
     0%{width:400px;}
     25%{height:300px;}
@@ -62,7 +38,7 @@ font-family: 'Syne', sans-serif;
 }*/
 /*.Titulo{
     font-size: 25px;
-    color:black;
+    color:black;    
     font-weight: bold;
     text-align: center;
     letter-spacing: 10px;
@@ -112,7 +88,7 @@ font-family: 'Syne', sans-serif;
 .redes:hover{
   transform: scale(1.1, 1.1);
 }
-*/.carousel {
+*.carousel {
      width:500px;
      height:500px;
      margin-left:30%;
