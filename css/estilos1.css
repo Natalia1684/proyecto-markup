@@ -47,7 +47,7 @@ font-family: 'Syne', sans-serif;
 #TituloNosotros{
     background: radial-gradient(circle at top left, #fdbb2d, #22c1c3);  
 }*/
-.espacioPalabras{
+/*.espacioPalabras{
     word-spacing: 30px;
 }
 /*.grid{
@@ -63,7 +63,7 @@ font-family: 'Syne', sans-serif;
     gap:1em;
     padding:1em;  
 }*/
-.item{
+/*.item{
     border: solid 1px yellow;
     height: 50px;
     width: 200px;

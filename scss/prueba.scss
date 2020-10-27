@@ -17,9 +17,14 @@
     margin: 0 auto;
     max-width: 100%;
 }
-
-
-
+.ImagenIndex{
+    float:left;
+    margin-top:5%;
+    margin:center;
+    margin-left:4%;
+    padding:2px;
+    border-radius: 15px;
+}
 .Titulo{
     font-size: 30px;
     color:black;
@@ -30,29 +35,16 @@
     background-image: linear-gradient(to right, #3494E6, #b91d73); 
 }
 .texto{
-    font-size: 30px;
+    font-size: 28px;
     padding-top: 2%;
     margin: 0 auto;
     font-weight: bold;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 3%; 
     
-    
-}
-.texto1{
-    font-size: 30px;
-    padding-top:3%;
-    margin: 0 auto;
-    font-weight: bold;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-       
-}
-h2{
-    text-decoration: underline wavy black;
 }
 h3{
-    text-decoration: underline wavy black;
     text-align: center;
     margin: 0 auto;
     font-weight: bold;
@@ -61,24 +53,16 @@ h3{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-left: 0;
 }
-#TituloNosotros{
-    background: radial-gradient(circle at top left, #fdbb2d, #22c1c3);
-    @include titulos(20px,200);
-} 
 .container-imag{
-    display: block;
+    width: 400px;
+    display: inline;
     justify-content: space-around;
     margin: center;
     margin-top:5%;
     padding: 0 auto;
+    max-width: 100%;
    }
-.ImagenIndex{
-    float:left;
-    margin-top:5%;
-    margin:center;
-    margin-left:5%;
-    padding:3px;
-}
+
 .contenido{
     text-transform:uppercase;
     font-size: 25px;
@@ -86,7 +70,6 @@ h3{
     margin-left: 6%;
     margin-top: 10%;
     
-   
 }
 .intro{
     font-size: 25px;
@@ -101,7 +84,7 @@ h3{
     text-transform: uppercase;
     border:solid 1px; 
     
-   }  
+}  
 .info{
     margin-top:2%;
     font-size: 20px;
@@ -109,31 +92,6 @@ h3{
     margin-left: 5%;
 }
 
-
-
-
-   
-    
-
-.ImagenIndex{
-    height:400px;
-    width: 600px;
-    float:right;
-    margin-top:10%;
-    margin:auto;
-    margin-right:5%;
-    padding:5px;
-
-    
-}
-
-.texto-corporales{
-    position: left;
-    text-align:left;
-    margin-top:auto;
-    font-size: 20px;
-    font-weight: bold;
-}
 .img-promociones{
     display:inline;
     justify-content: center; 
@@ -142,9 +100,7 @@ h3{
     height:400px;
     width: 600px;
     margin-left: 5%;
-    margin-right: 5%;
-    
-   
+    margin-right: 5%; 
 }
 .promo-img{
     width: 400px;
@@ -155,7 +111,6 @@ h3{
     justify-content: right;
     line-height: 0px;
 }
-
 //estilos Sección Depilación/
 .depi{
    
@@ -269,15 +224,7 @@ h3{
       object-fit: cover;
       object-position: center center;
     }
-}
-          
-          
-          
-  
-  
-
-
-
+ 
 .facial{
     width: 400px;
     height: 600px;
@@ -287,26 +234,6 @@ h3{
     display: flex;
     margin-top:5%
 }
-
-/*.tratamientos__subtitulo{
-    width: auto;
-    height: auto;
-    text-align:left ;
-    text-decoration: none;
-
-}*/
-.index__container{
-    width: 800px;
-    height: 600px;
-
-}
-.corporal{
-    width:400px;
-    height:400px;
-    float:center;
-}
-
-
 #map{
     width: 800px;
     height: 600px;
@@ -316,24 +243,50 @@ h3{
     margin-bottom: 2px;
 }
 //Estilos Nosotros
-.grid{
-    display:grid;
+.card-img-top{
+    width: 400px;
     height: 400px;
-    border:solid 5px blueviolet;
-    background-color: lightslategrey;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    justify-content: center;
-    justify-items: center;
-    align-items:center; 
-    gap:1em;
-    padding:1em;
-    margin-bottom: 5%;
-    font-weight: bolder;
+    margin: 0 auto;
+    margin-top: 3%;
+    margin-bottom: 2%;
 }
-.grid div:hover{
-    border:1px yellow;
-    height: 150px;
+.container-principal{
+    margin-top: 3%;
+}
+.card-title{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+    color: #242D2D;
+    animation-name: cards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+    animation-delay: 0s;
+}
+@keyframes cards{
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+.texto-nos{
+    font-size: 20px;
+    font-weight: bold;
+    margin:0;
+}
+.text-description{
+    margin-top: 5% ;
+    margin:0;
+    margin-left:5%;
+}
+#ImagenMujer2{
+    width: 400px;
+    height: 300px;
+    margin-left: 20%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    border-radius: 15px;
 }
 //Estilos footer
 
@@ -419,8 +372,6 @@ footer a{
         width: 150px;
 
     }
-    .grid {
-		grid-template-columns: repeat(4, 1fr);
-
-  }
+   
+}
 }
