@@ -1,15 +1,16 @@
 .navbar {
     position:fixed;
     width: 100%;
-    background-color: #F2F2F2;
+    background-color: #747E7E;
     display: flex;
     align-items: center;
     justify-content: space-between; 
     max-width: 100%;
-    font-size:18px;
-    letter-spacing:15px;
+    font-size:20px;
+    letter-spacing:12px;
     font-weight: bold; 
     top:0;
+    z-index: 100;
 }
 
     

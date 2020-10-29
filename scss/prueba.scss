@@ -7,9 +7,27 @@
     letter-spacing:10px;
     background-image: linear-gradient(to right, #F7D6EC, #b91d73);
 }
+
+#btn-menu{
+    display: none;
+
+}
+label{
+    display: none;
+    width: 60px;
+    padding: 10px;
+    font-size: 30px;
+    transition: all 500ms else;
+}
+label:hover{
+    background-color:red;
+}
 @import "header";
 .logo{
     height: 100px;
+}
+.icono-burguer{
+    width: 600px;
 }
 .container-body{
     position: relative;
@@ -59,13 +77,12 @@ h3{
     justify-content: space-around;
     margin: center;
     margin-top:5%;
-    padding: 0 auto;
     max-width: 100%;
    }
 
 .contenido{
     text-transform:uppercase;
-    font-size: 25px;
+    font-size: 20px;
     color: grey;
     margin-left: 6%;
     margin-top: 10%;
@@ -100,7 +117,7 @@ h3{
     height:400px;
     width: 600px;
     margin-left: 5%;
-    margin-right: 5%; 
+    margin-right:5%; 
 }
 .promo-img{
     width: 400px;
@@ -252,6 +269,7 @@ h3{
 }
 .container-principal{
     margin-top: 3%;
+   
 }
 .card-title{
     font-size: 20px;
@@ -308,12 +326,13 @@ h3{
     height: 95px;
     padding-top: 5%;
     text-transform: none;
-    margin-left: 2%;
+    margin-left: 5%;
 }
 .place-footer{
     color: black;
     text-align: center;
     margin: 0px;
+    
     
 } 
 h5{
@@ -348,30 +367,73 @@ footer a{
 }
 .formulario{
     margin-left: 30%;
+    margin-bottom: 20%;
+    padding:15px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
-//media query- Mobile
-@media(min-width:375px) and (max-width:414px)
+
+/*media query*/
+@media (max-width:900px)
 {
-    body{
-        background-color: green;
+    .container-imag{
+        width:100%;
+        margin-right: 20%;
+    
     }
-    footer{
-        background-color: rgba(140,147,177,1);
-        width: 150px;
+    .header label{
+        display:block;
     }
+    .menu{
+        position:absolute;
+        width: 100%;
+        margin-top: -100%;
+    }
+    .img-promociones{
+        width:80%;
+        margin-left: auto;
+    }
+    .container-body{
+        width:80%;
+        margin-top: 10%;
+        margin-right:auto;
+        font-size: 16px;
+    
+    }
+    .texto{
+        margin-left: 40%;
+        margin-top: 5%;
+    }
+    .Descuentos{
+        margin-left: 20%;
+        max-width: 100%;
+    }
+    .depdef{
+        max-width: 50%;
+       margin: auto;
+        
+    }
+    .titulodepi{
+        width:100%;
+    }
+    .maquinas{
+        display: flex;
+        max-width: 80%;
+    }
+    .maquina{
+        max-width: max-content;
+    }
+    .promo-img{
+        width: 300px;
+        margin: center;
+       
+
+    }
+footer{
+    max-width: max-content;
+    margin-right: 20%;
+    font-size: 10px;
 }
-
-/* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-    body {
-      background-color: #F5CF8E;
-    }
-    footer{
-        background-color:#E84C4C;
-        width: 150px;
-
-    }
-   
 }
 }
