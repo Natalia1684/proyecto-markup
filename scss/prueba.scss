@@ -7,31 +7,36 @@
     letter-spacing:10px;
     background-image: linear-gradient(to right, #F7D6EC, #b91d73);
 }
-
-#btn-menu{
-    display: none;
-
-}
-label{
-    display: none;
-    width: 60px;
-    padding: 10px;
-    font-size: 30px;
-    transition: all 500ms else;
-}
-label:hover{
-    background-color:red;
-}
-@import "header";
 .logo{
-    height: 100px;
+    height: 80px; 
+}
+.navbar{
+    position:fixed;
+    width: 100%;    
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(253,180,187,1) 51%, rgba(255,169,180,1) 100%) !important;
+    padding:15px;
+    list-style:none;
+    display: flex;
+    text-align: end;
+    max-width: 100%;
+    letter-spacing:10px;
+    word-spacing: 20px;
+    font-weight: bold; 
+    top:0;
+    left:0;
+    font-size: 20px;
+    padding:15px 30px;
+    transition:all 500ms ease;
+    z-index: 100;
 }
 //* Styles Index/*
+
 .container-body{
     position: relative;
     min-height: 100vh;
     margin: 0 auto;
     max-width: 100%;
+    background:linear-gradient(to right, rgba(250,240,245,1) 0%, rgba(234,146,163,1) 97%, rgba(234,143,160,1) 100%);
 }
 .ImagenIndex{
     float:left;
@@ -40,46 +45,73 @@ label:hover{
     margin-left:4%;
     padding:2px;
     border-radius: 15px;
+    margin-bottom: 3%;
 }
 .Titulo{
     font-size: 30px;
     color:black;
-    font-weight: bold;
+    font-weight: bolder;
     padding-top: 10%;
     text-align: center;
-    letter-spacing: 10px;
+    letter-spacing: 15px;
     background-image: linear-gradient(to right, #3494E6, #b91d73); 
 }
-.texto{
-    font-size: 28px;
+.texto-first{
+    text-transform:uppercase;
+    font-size: 30px;
+    text-decoration-style: solid;
     padding-top: 2%;
     margin: 0 auto;
     font-weight: bold;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-top: 3%; 
-    
+    background: linear-gradient(to right, gba(153,153,153,1) 0%, rgba(140,140,140,1) 51%, rgba(148,148,148,1) 69%, rgba(171,171,171,1) 100%);
+}
+.texto{
+    font-size: 25px;
+    margin: 0 auto;
+    margin-top: 2%;
+    font-weight: bold;
+    letter-spacing: 10px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 3%;
+    align-items:center;
+    padding-bottom: 3%;
+    background: linear-gradient(to right, rgba(235,233,249,1) 0%, rgba(216,208,239,1) 50%, rgba(206,199,236,1) 51%, rgba(193,191,234,1) 100%);    
+}
+#map{
+    margin:0;
+    display:flex;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    padding-right: 10px;  
 }
 .contenido{
     text-transform:uppercase;
     font-size: 20px;
     color: grey;
-    margin-left: 20%;
-    padding-top: 15%;
-
+    margin-left: 25%;
+    text-decoration-line: underline;
 }
 .parrafo1{
-    margin-top:15%;
+    margin-top:5%;
+    color:#242D2D;
+    margin-left:5%;
+    font-weight:bolder;
+    font-size: 25px;  
+    letter-spacing: 5px; 
 }
-
 .container-imag{
     width: 400px;
     display: inline;
     justify-content: space-around;
     margin: center;
-    margin-top:5%;
+    margin-top:3%;
     max-width: 100%;
-   }
+}
 .intro{
     font-size: 25px;
     margin-left: 6%;
@@ -91,7 +123,7 @@ label:hover{
 }
 .Descuentos{
     margin-top: 5%;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
     letter-spacing: 10px;
     background-image: linear-gradient(to right, #DF505D, #8C50DF ); 
@@ -101,17 +133,14 @@ label:hover{
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
     animation-duration: 2s;
-    animation-delay: 0s;
-    
+    animation-delay: 0s;   
 }
-
 .info{
     margin-top:2%;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     margin-left: 5%;
 }
-
 .img-promociones{
     display:inline;
     justify-content: center; 
@@ -132,8 +161,7 @@ label:hover{
     line-height: 0px;
 }
 //estilos Sección Depilación/
-.depi{
-   
+.depi{  
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -149,6 +177,7 @@ label:hover{
     text-transform: uppercase;
     color:#242D2D;
     font-weight: bolder;
+    letter-spacing: 5px;
     margin-top: 3%;
     margin-left:30%;
     margin-bottom:3%;
@@ -157,6 +186,7 @@ label:hover{
     animation-timing-function: ease-in;
     animation-duration: 2s;
     animation-delay: 0s;
+    text-decoration-style: double;
 }
 @keyframes depi{
   0% { opacity: 1.0; }
@@ -165,7 +195,7 @@ label:hover{
 }
 .titulodepi1{
     color:#242D2D;
-    font-size: 25px;
+    font-size: 30px;
     letter-spacing: 5px;
     margin-left: 30%;
     margin-bottom: 2%;
@@ -174,9 +204,10 @@ label:hover{
 .maquinas{
     display:flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     max-width: 100%;
-    margin-left:6%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top:5%;
 }
 .maquina{
@@ -184,8 +215,7 @@ label:hover{
     height:600px;
     float: left;
     border-radius:100px;
-    border:10px solid #666;
-    white-space: 2px;
+    border:3px solid #666;
   }
  .description{
      display:flex;
@@ -193,15 +223,15 @@ label:hover{
      padding-top: 20px;
  }
  .content{
-    font-size: 20px;
+    font-size: 25px;
     padding-top:3%;
     margin: 0 auto;
     margin-left: 3%;
     margin-top: 2%;
+    padding: 15px;
     margin-bottom: 5%;
-    font-weight:200px;
-    text-align:left;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+    text-align:left; 
+    line-height: 40px;
  }
 
 //estilos Sección Tratamientos/
@@ -213,19 +243,21 @@ label:hover{
 }
 .face-content{
     margin-top:5%;
-    
 }
 .face{
     font-size: 40px;
     font-weight: 100px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-    margin-left: 30%;
     text-decoration: none;
+    margin-bottom: 5%;
+    padding-left: 35%;
+    background:linear-gradient(to right, rgba(226,202,242,1) 0%, rgba(213,180,228,1) 50%, rgba(186,141,211,1) 51%, rgba(231,179,255,1) 100%);
 }
 .descripcion{
     font-size: 25px;
     font-style: bold;
     margin-left: 2%;
+    margin-right: 5%;
+    padding-bottom:35px;
 }
 .img-corporal{
     display: flex;
@@ -243,8 +275,7 @@ label:hover{
       height: 100%;
       object-fit: cover;
       object-position: center center;
-    }
- 
+}
 .facial{
     width: 400px;
     height: 600px;
@@ -254,14 +285,7 @@ label:hover{
     display: flex;
     margin-top:5%
 }
-#map{
-    width: 800px;
-    height: 600px;
-    margin:0 auto;
-    display:flex;
-    margin-left: 10%;
-    margin-bottom: 2px;
-}
+
 //Estilos Nosotros
 .card-img-top{
     width: 400px;
@@ -271,11 +295,13 @@ label:hover{
     margin-bottom: 2%;
 }
 .container-principal{
-    margin-top: 3%;
-   
+    margin-top: 3%;  
+}
+.card-text{
+    font-size:20px;
 }
 .card-title{
-    font-size: 20px;
+    font-size: 25px;
     text-transform: uppercase;
     font-weight: bolder;
     text-align: center;
@@ -292,9 +318,10 @@ label:hover{
     100% { opacity: 1.0; }
 }
 .texto-nos{
-    font-size: 20px;
-    font-weight: bold;
-    margin:0;
+    font-size: 30px;
+    margin-left: -2%;
+    padding:5px;
+    margin-top: 2%;
 }
 .text-description{
     margin-top: 5% ;
@@ -302,18 +329,41 @@ label:hover{
     margin-left:5%;
 }
 #ImagenMujer2{
-    width: 400px;
-    height: 300px;
-    margin-left: 20%;
-    margin-bottom: 10%;
-    margin-top: 10%;
+    width: 500px;
+    height: 500px;
+    position: flex;
     border-radius: 15px;
+    margin-left: 5%;
+}
+#salon{
+    width: 500px;
+    height: 500px;
+    position: flex;
+    border-radius: 15px;
+    margin: 100px;
+    margin-right: 5%;
+}
+.formulario{
+    margin-bottom: 5%;
+    padding:25px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;  
+}
+.info-contacto{
+    padding:10px;
+    max-width: 100%;
+    margin-bottom: 5%;
+    background:linear-gradient(to right, rgba(226,202,242,1) 0%, rgba(213,180,228,1) 50%, rgba(186,141,211,1) 51%, rgba(231,179,255,1) 100%);
+    padding-left:5%;
+    font-size: 30px;
+    text-align: center;
 }
 //Estilos footer
 
  footer {
     display: flex;
-    background-color: #D8BCEE;
+    background-color:#698282;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
@@ -322,39 +372,40 @@ label:hover{
     right: 0;
     left: 0;
     margin-bottom: 0;
-   
-
+    border-top: 10px solid #b91d73;
 }
 .logofooter{
     height: 95px;
     padding-top: 5%;
     text-transform: none;
-    margin-left: 5%;
+    margin-left: -20%;
 }
 .place-footer{
-    color: black;
+    color:#F8FEFE;
+    font-size: 30px;
     text-align: center;
     margin: 0px;
-    
-    
-} 
+    padding:15px 10px;
+    position:relative; 
+    transition: all .7s ease;
+
+}
 h5{
     color: black;
     margin: 0;
     font-size: 20px;
     text-decoration: none;
 }
+h6{
+    font-size: 20px;
+    font-style:italic;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
 footer a{
     color: black;
     text-decoration: none;
     text-align: center;
-}
-.redes{
-    padding-top: 5%;
-    width: 40px;
-    height: 50px;
-    line-height: 2%;
-    
 }
 .navfoot{
     display: flex;
@@ -362,28 +413,27 @@ footer a{
     justify-content: space-between;
     font-size: 18px;
     font-weight: bold;
-    
 }
 .textofoot{
     letter-spacing:10px; 
-    word-spacing: 5pt;
-}
-.formulario{
-    margin-left: 30%;
-    margin-bottom: 20%;
-    padding:15px;
+    margin-left: 10%;
+    word-spacing:2px;
     font-size: 20px;
-    font-weight: bold;
 }
-
-
 /*media query*/
-@media (max-width:900px)
-{
+@media screen and (max-width: 768px) {
+    .container-body{
+        background:#698282;
+        max-width: 100%;
+    }
+    .navbar{
+        padding-right: 30%;
+    }
     .container-imag{
         width:100%;
         margin-top: 5%;
         margin-right: auto;
+        margin-left: 20%;
     }
     .img-promociones{
         width:80%;
@@ -397,15 +447,18 @@ footer a{
     
     }
     .ImagenIndex{
-       margin-left: 5%;
-       width:90%;
-       margin-right: 3%;
+       margin-left: 15%;
+       width:95%;
+       margin-right:15%;
+       margin-bottom: 5%;
     }
     .texto{
-        margin-left: 10%;
-        margin-top: 10%;
         width: max-content;
-        margin-left:30%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .info{
+        width: 110%;
     }
     .contenido{
         max-width: 100%;
@@ -414,40 +467,44 @@ footer a{
     }
     .intro{
         position:block;
-        width: 90%;
-        margin-left: 5%;
-        
+        width: 100%;
+        margin: auto;
+        margin-left: 15%;
+    }
+    .Descuentos{
+        width: 140%;
     }
     .parrafo1{
-        width:auto;
-        margin-left: 5%;
+        margin-left:-10%;
         margin-top: 20%;
         position: block;
-        font-size: 15px;
+        font-size: 25px;
        
     }
     .Titulo{
-        margin-top: 15%;
-        max-width: 100%;
+        margin-top: 10%;
+        width:150%;
+        
     }
-   
-    .Descuentos{
-        margin-left: auto;
-        max-width: 100%;
-    }
+   .texto-first{
+       padding-left:15%;
+       letter-spacing: 8px;
+       width: 120%;
+   }
     .promo-img{
         width: 300px;
-        margin-left:20%;
-        margin-right: 10%;
+        margin-left:35%;
+        margin-right: 20%;
     }
     #map{
-        width:90%;
-        margin-right:15%;
+        width:120%;
+        margin-right:4%;
         margin-left: 4%;
     }
     .depdef{
         max-width: 90%;
-       margin-left: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
         
     }
     .titulodepi{
@@ -456,11 +513,12 @@ footer a{
     }
     .titulodepi1{
         width:80%;
-        margin-left: 10%;
+        margin-left:15%;
     }
     .maquinas{
         display: inline-flex;
         max-width: 80%;
+        margin-left:auto;
        
     }
     .maquina{
@@ -470,8 +528,6 @@ footer a{
     }
     .face{
         font-size: 25px;
-        margin-left: 18%;
-        
     }
     .container-principal{
         width: 105%;
@@ -482,11 +538,23 @@ footer a{
         width:100%;
         display:fixed;
     }
+    #salon{
+        width: 500px;
+        height: 500px;
+        position: flex;
+        border-radius: 15px;
+        margin-left: 5%;
+        padding-top: 5%;
+    }
  
 footer{
-    max-width: max-content;
-    margin-right: 20%;
-    font-size: 10px;
+    width: auto;
+    margin-top: 10%;
+    font-size: 10px;  
+}
+.navfoot{
+    word-spacing:2%;
+    padding-right: 15%;
 }
 }
 }
