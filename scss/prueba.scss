@@ -38,7 +38,6 @@
 .container-body{
     width: 100%;
     background:linear-gradient(to right, rgba(250,240,245,1) 0%, rgba(234,146,163,1) 97%, rgba(234,143,160,1) 100%);
-
 }
 .ImagenIndex{
     float:left;
@@ -235,7 +234,6 @@
     text-align:left; 
     line-height: 40px;
  }
-
 //estilos Sección Tratamientos/
 .d-block {
     width:auto;
@@ -458,8 +456,11 @@ footer a{
         color: black;
     }
     .info{
-        width: 100%;
-        margin-left: 5%;
+        width: 90%;
+        margin-left:8%;
+        margin-right: 10%;
+        font-weight: normal;
+        text-align: justify;
     }
     .contenido{
         margin-top: 10%;
@@ -467,13 +468,16 @@ footer a{
     .intro{
         position:block;
         width: 90%;
-        margin: auto;
+        margin: 0;
+        text-justify: distribute-all-lines;
+        padding-left: 8%;
     }
     .Descuentos{
         width: 100%;
     }
     .parrafo1{
         white-space: nowrap;
+        margin-left: -10%;
         text-overflow: ellipsis;
         overflow: hidden;
         width: 230px;
@@ -527,7 +531,8 @@ footer a{
     }
     .face{
         font-size: 25px;
-        padding-left: 5% ;
+        padding-left: 10%;
+        font-weight: bold;
     }
     .row{
         display: block;
@@ -539,6 +544,9 @@ footer a{
     .card-img-top{
         width:100%;
         display:fixed;
+    }
+    .card-text{
+        color: black;
     }
     #ImagenMujer2{
         width: 100%;
@@ -571,12 +579,14 @@ footer a{
        word-spacing: 3%;
     }
     .formulario{
-        text-emphasis: initial;
+        padding:10px;
+        padding-bottom: 20%;
     }
     .info-contacto{
         width: 100%;
+        padding: 0%;
+        margin-bottom: 5%;
     }
-    
 }
 
 

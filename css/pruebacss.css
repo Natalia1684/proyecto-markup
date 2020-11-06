@@ -443,18 +443,24 @@ footer a {
     padding-right: 2%;
     color: black; }
   .info {
-    width: 100%;
-    margin-left: 5%; }
+    width: 90%;
+    margin-left: 8%;
+    margin-right: 10%;
+    font-weight: normal;
+    text-align: justify; }
   .contenido {
     margin-top: 10%; }
   .intro {
     position: block;
     width: 90%;
-    margin: auto; }
+    margin: 0;
+    text-justify: distribute-all-lines;
+    padding-left: 8%; }
   .Descuentos {
     width: 100%; }
   .parrafo1 {
     white-space: nowrap;
+    margin-left: -10%;
     text-overflow: ellipsis;
     overflow: hidden;
     width: 230px; }
@@ -496,7 +502,8 @@ footer a {
     margin-right: auto; }
   .face {
     font-size: 25px;
-    padding-left: 5%; }
+    padding-left: 10%;
+    font-weight: bold; }
   .row {
     display: block; }
   .container-principal {
@@ -505,6 +512,8 @@ footer a {
   .card-img-top {
     width: 100%;
     display: fixed; }
+  .card-text {
+    color: black; }
   #ImagenMujer2 {
     width: 100%;
     border-radius: 15px;
@@ -531,6 +540,9 @@ footer a {
     padding-left: 8%;
     word-spacing: 3%; }
   .formulario {
-    text-emphasis: initial; }
+    padding: 10px;
+    padding-bottom: 20%; }
   .info-contacto {
-    width: 100%; } }
+    width: 100%;
+    padding: 0%;
+    margin-bottom: 5%; } }
