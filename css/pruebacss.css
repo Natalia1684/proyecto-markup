@@ -21,11 +21,13 @@
   transition: all 500ms ease;
   z-index: 100; }
 
-.container-fluid {
+.container {
   position: relative;
-  min-height: 100vh;
   margin: 0 auto;
-  max-width: 100%;
+  max-width: 100%; }
+
+.container-body {
+  width: 100%;
   background: linear-gradient(to right, #faf0f5 0%, #ea92a3 97%, #ea8fa0 100%); }
 
 .ImagenIndex {
@@ -89,7 +91,7 @@
 .parrafo1 {
   margin-top: 5%;
   color: #242D2D;
-  margin-left: 5%;
+  margin-left: 10%;
   font-weight: bolder;
   font-size: 25px;
   letter-spacing: 5px; }
@@ -248,7 +250,7 @@
 .descripcion {
   font-size: 25px;
   font-style: bold;
-  margin-left: 2%;
+  margin-left: 5%;
   margin-right: 5%;
   padding-bottom: 35px; }
 
@@ -267,221 +269,266 @@
   .drenaje-im {
     height: 100%;
     object-fit: cover;
-    object-position: center center; }
-  .facial {
-    width: 400px;
-    height: 600px;
-    margin: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-top: 5%;
-    display: flex;
-    margin-top: 5%; }
-  .card-img-top {
-    width: 400px;
-    height: 400px;
-    margin: 0 auto;
-    margin-top: 3%;
-    margin-bottom: 2%; }
-  .container-principal {
-    margin-top: 3%; }
-  .card-text {
+    object-position: center center; } }
+
+.facial {
+  width: 400px;
+  height: 600px;
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 5%;
+  display: flex;
+  margin-top: 5%; }
+
+.card-img-top {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 3%;
+  margin-bottom: 2%; }
+
+.container-principal {
+  margin-top: 3%; }
+
+.card-text {
+  font-size: 20px; }
+
+.card-title {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-align: center;
+  color: #242D2D;
+  animation-name: cards;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 3s;
+  animation-delay: 0s; }
+
+@keyframes cards {
+  0% {
+    opacity: 1.0; }
+  50% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1.0; } }
+
+.texto-nos {
+  font-size: 30px;
+  margin-left: -2%;
+  padding: 5px;
+  margin-top: 2%; }
+
+.text-description {
+  margin-top: 5%;
+  margin: 0;
+  margin-left: 5%; }
+
+#ImagenMujer2 {
+  width: 500px;
+  height: 500px;
+  position: flex;
+  border-radius: 15px;
+  margin-left: 5%; }
+
+#salon {
+  width: 500px;
+  height: 500px;
+  position: flex;
+  border-radius: 15px;
+  margin: 100px;
+  margin-right: 5%; }
+
+.formulario {
+  margin-bottom: 5%;
+  padding: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center; }
+
+.info-contacto {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 5%;
+  background: linear-gradient(to right, #e2caf2 0%, #d5b4e4 50%, #ba8dd3 51%, #e7b3ff 100%);
+  padding-left: 5%;
+  font-size: 30px;
+  text-align: center; }
+
+footer {
+  display: flex;
+  background-color: #698282;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  width: 100%;
+  right: 0;
+  left: 0;
+  margin-bottom: 0;
+  border-top: 10px solid #b91d73; }
+
+.logofooter {
+  height: 95px;
+  padding-top: 5%;
+  text-transform: none;
+  margin-left: -20%; }
+
+.place-footer {
+  color: #F8FEFE;
+  font-size: 30px;
+  text-align: center;
+  margin: 0px;
+  padding: 15px 10px;
+  position: relative;
+  transition: all .7s ease; }
+
+h5 {
+  color: black;
+  margin: 0;
+  font-size: 20px;
+  text-decoration: none; }
+
+h6 {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bolder;
+  letter-spacing: 5px; }
+
+footer a {
+  color: black;
+  text-decoration: none;
+  text-align: center; }
+
+.navfoot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold; }
+
+.textofoot {
+  letter-spacing: 10px;
+  margin-left: 10%;
+  word-spacing: 2px;
+  font-size: 20px; }
+
+/*media query*/
+@media screen and (max-width: 768px) {
+  .navbar {
     font-size: 20px; }
-  .card-title {
-    font-size: 25px;
-    text-transform: uppercase;
-    font-weight: bolder;
-    text-align: center;
-    color: #242D2D;
-    animation-name: cards;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-duration: 3s;
-    animation-delay: 0s; }
-  @keyframes cards {
-    0% {
-      opacity: 1.0; }
-    50% {
-      opacity: 0.0; }
-    100% {
-      opacity: 1.0; } }
-  .texto-nos {
-    font-size: 30px;
-    margin-left: -2%;
-    padding: 5px;
-    margin-top: 2%; }
-  .text-description {
-    margin-top: 5%;
-    margin: 0;
-    margin-left: 5%; }
-  #ImagenMujer2 {
-    width: 500px;
-    height: 500px;
-    position: flex;
-    border-radius: 15px;
-    margin-left: 5%; }
-  #salon {
-    width: 500px;
-    height: 500px;
-    position: flex;
-    border-radius: 15px;
-    margin: 100px;
-    margin-right: 5%; }
-  .formulario {
-    margin-bottom: 5%;
-    padding: 25px;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center; }
-  .info-contacto {
-    padding: 10px;
-    max-width: 100%;
-    margin-bottom: 5%;
-    background: linear-gradient(to right, #e2caf2 0%, #d5b4e4 50%, #ba8dd3 51%, #e7b3ff 100%);
-    padding-left: 5%;
-    font-size: 30px;
-    text-align: center; }
-  footer {
-    display: flex;
-    background-color: #698282;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    position: absolute;
+  .container-body {
+    width: 100% !important;
+    background: #01101d; }
+  .container {
+    width: 100%; }
+  .Titulo {
     width: 100%;
-    right: 0;
-    left: 0;
-    margin-bottom: 0;
-    border-top: 10px solid #b91d73; }
-  .logofooter {
-    height: 95px;
-    padding-top: 5%;
-    text-transform: none;
-    margin-left: -20%; }
-  .place-footer {
-    color: #F8FEFE;
-    font-size: 30px;
-    text-align: center;
-    margin: 0px;
-    padding: 15px 10px;
-    position: relative;
-    transition: all .7s ease; }
-  h5 {
-    color: black;
-    margin: 0;
-    font-size: 20px;
-    text-decoration: none; }
-  h6 {
-    font-size: 20px;
-    font-style: italic;
-    font-weight: bolder;
-    letter-spacing: 5px; }
-  footer a {
-    color: black;
-    text-decoration: none;
-    text-align: center; }
+    margin-top: 30%; }
+  .container-imag {
+    width: 100%;
+    margin-top: 5%;
+    margin-right: auto;
+    margin-left: 20%; }
+  .img-promociones {
+    width: 80%;
+    margin-left: auto; }
+  .ImagenIndex {
+    width: 95%;
+    margin-bottom: 5%; }
+  .texto {
+    width: 90%;
+    padding-left: 2%;
+    padding-right: 2%; }
+  .info {
+    width: 100%;
+    margin-left: 5%; }
+  .contenido {
+    margin-top: 10%; }
+  .intro {
+    position: block;
+    width: 90%;
+    margin: auto; }
+  .Descuentos {
+    width: 100%; }
+  .parrafo1 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 230px; }
+  .texto-first {
+    padding-left: 15%;
+    letter-spacing: 8px; }
+  .promo-img {
+    width: 300px;
+    margin-left: 8%;
+    margin-right: 5%; }
+  #map {
+    width: 90%;
+    margin-right: 6%;
+    margin-left: 8%; }
+  .depdef {
+    max-width: 90%;
+    margin-left: 10%;
+    margin-right: 10%; }
+  .titulodepi {
+    width: 80%;
+    margin-left: 15%; }
+  .titulodepi1 {
+    width: 80%;
+    margin-left: 15%; }
+  .maquinas {
+    display: block; }
+  .description {
+    display: block;
+    padding-top: 20px; }
+  .content {
+    padding-left: 10%;
+    padding-right: 3%; }
+  .drenaje-img {
+    width: 100%;
+    position: relative; }
+  .maquina {
+    width: 100%;
+    margin-left: 5%;
+    margin-right: auto; }
+  .face {
+    font-size: 25px;
+    padding-left: 5%; }
+  .row {
+    display: block; }
+  .container-principal {
+    width: 100%;
+    margin-left: auto; }
+  .card-img-top {
+    width: 100%;
+    display: fixed; }
+  #ImagenMujer2 {
+    width: 100%;
+    border-radius: 15px;
+    margin-left: 3%;
+    padding-top: 5%; }
+  #salon {
+    width: 100%;
+    border-radius: 15px;
+    margin-left: 3%;
+    padding-top: 5%; }
+  .container-body {
+    flex-wrap: wrap; }
+  footer {
+    width: 100%;
+    height: 400px;
+    flex-wrap: wrap;
+    position: absolute;
+    padding-block-end: 20%; }
   .navfoot {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 18px;
-    font-weight: bold; }
-  .textofoot {
-    letter-spacing: 10px;
-    margin-left: 10%;
-    word-spacing: 2px;
-    font-size: 20px; }
-  /*media query*/
-  @media screen and (max-width: 768px) {
-    .navbar {
-      font-size: 20px; }
-      .navbar .container {
-        width: 100% !important;
-        background: #01101d; }
-    .Titulo {
-      margin-top: 25%;
-      width: 100%; }
-    .container-imag {
-      width: 100%;
-      margin-top: 5%;
-      margin-right: auto;
-      margin-left: 20%; }
-    .img-promociones {
-      width: 80%;
-      margin-left: auto; }
-    .ImagenIndex {
-      width: 95%;
-      margin-bottom: 5%; }
-    .texto {
-      width: 90%;
-      padding-left: 2%;
-      padding-right: 2%; }
-    .info {
-      width: 100%;
-      margin-left: 5%; }
-    .contenido {
-      margin-top: 10%; }
-    .intro {
-      position: block;
-      width: 90%;
-      margin: auto; }
-    .Descuentos {
-      width: 100%; }
-    .parrafo1 {
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      width: 230px; }
-    .texto-first {
-      padding-left: 15%;
-      letter-spacing: 8px; }
-    .promo-img {
-      width: 300px;
-      margin-left: 8%;
-      margin-right: 5%; }
-    #map {
-      width: 90%;
-      margin-right: 6%;
-      margin-left: 8%; }
-    .depdef {
-      max-width: 90%;
-      margin-left: 10%;
-      margin-right: 10%; }
-    .titulodepi {
-      width: 80%;
-      margin-left: 15%; }
-    .titulodepi1 {
-      width: 80%;
-      margin-left: 15%; }
-    .maquinas {
-      display: inline-flex;
-      max-width: 100%;
-      margin-left: auto; }
-    .drenaje-img {
-      width: 100%;
-      position: relative; }
-    .maquina {
-      width: 100%;
-      margin-left: 5%;
-      margin-right: auto; }
-    .face {
-      font-size: 25px;
-      padding-left: 5%; }
-    .container-principal {
-      width: max-content;
-      margin-left: auto; }
-    .card-img-top {
-      width: 100%;
-      display: fixed; }
-    #salon {
-      width: auto;
-      height: auto;
-      position: flex;
-      border-radius: 15px;
-      margin-left: 5%;
-      padding-top: 5%; }
-    .container-foot {
-      position: fixed;
-      bottom: 0;
-      clear: both;
-      width: 100%;
-      height: 100px; } } }
+    flex-direction: column;
+    justify-content: space-around;
+    padding-right: 15%;
+    padding-left: 8%;
+    word-spacing: 3%; }
+  .formulario {
+    text-emphasis: initial; }
+  .info-contacto {
+    width: 100%; } }
