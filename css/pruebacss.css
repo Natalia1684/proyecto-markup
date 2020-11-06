@@ -419,7 +419,8 @@ footer a {
     font-size: 20px; }
   .container-body {
     width: 100% !important;
-    background: #01101d; }
+    background: #01101d;
+    color: #F7D6EC; }
   .container {
     width: 100%; }
   .Titulo {
